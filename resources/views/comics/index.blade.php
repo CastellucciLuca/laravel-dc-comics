@@ -27,7 +27,7 @@
                 <td>{{$comic->sale_date}}</td>
                 <td>{{$comic->type}}</td>
                 <td>
-                    <a href="" class="btn btn-primary">View</a>
+                    <a href=" {{route('comic.show', $comic->id)}} " class="btn btn-primary">View</a>
                 </td>
             </tr>
             @empty
