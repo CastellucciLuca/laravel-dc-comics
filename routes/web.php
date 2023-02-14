@@ -15,9 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [ComicsController::class, 'index'])->name('comics.index');
-Route::get('/comic/create', [ComicsController::class, 'create'])->name('comic.create');
-Route::post('/comic/store', [ComicsController::class, 'store'])->name('comic.store');
-Route::get('/comic/{id}', [ComicsController::class, 'show'])->name('comic.show');
-// Serve per creare in automatico tutte le rotte
-//Route::resource('/comic', ComicsController::class);
+//Route::get('/comic/create', [ComicsController::class, 'create'])->name('comic.create');
+//Route::get('/comic/{id}', [ComicsController::class, 'show'])->name('comic.show');
+Route::resource('/comic', ComicsController::class);
 
