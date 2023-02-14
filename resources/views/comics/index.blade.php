@@ -4,6 +4,11 @@
 <main>
     <h1>Dc Comics</h1>
     <table class="table table-hover">
+        <div class="d-flex">
+            <a class="ms-auto me-5 btn btn-primary" href="{{route('comic.create')}}">
+                Create new product
+            </a>
+        </div>
         <thead>
         <tr>
             <th scope="col">ID</th>
