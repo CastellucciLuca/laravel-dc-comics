@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row justify-content-around">
                 <div class="col-12">
-                    <form action="{{route('comic.store')}}" method="POST">
+                    <form action="{{ route('comic.store') }}" method="POST">
                         @csrf
                         <div class="mb-3">
                             <label class="form-label">
