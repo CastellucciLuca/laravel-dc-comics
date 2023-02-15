@@ -11,5 +11,7 @@
     </head>
     <body>
         @yield('main-app')
+
+        @yield("scripts")
     </body>
 </html>
