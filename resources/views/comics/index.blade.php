@@ -5,7 +5,7 @@
     <h1>Dc Comics</h1>
     <table class="table table-hover">
         <div class="d-flex">
-            <a class="ms-auto me-5 btn btn-primary" href="{{route('comic.create')}}">
+            <a class="ms-auto me-5 btn btn-primary" href="{{route('comics.create')}}">
                 Create new product
             </a>
         </div>
@@ -32,13 +32,13 @@
                 <td>{{$comic->sale_date}}</td>
                 <td>{{$comic->type}}</td>
                 <td>
-                    <a href=" {{route('comic.show', $comic->id)}} " class="btn btn-primary">View</a>
+                    <a href=" {{route('comics.show', $comic->id)}} " class="btn btn-primary">View</a>
                 </td>
                 <td>
-                    <a href="{{route('comic.edit', $comic->id)}}" class="btn btn-success">Edit</a>
+                    <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-success">Edit</a>
                 </td>
                 <td>
-                    <form class="form-deleter" action="{{route('comic.destroy', $comic->id)}}" method="POST">
+                    <form class="form-deleter" action="{{route('comics.destroy', $comic->id)}}" method="POST">
                         <button class="btn btn-danger">Delete</button>
                         @method('DELETE')
                         @csrf
