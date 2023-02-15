@@ -34,6 +34,9 @@
                 <td>
                     <a href=" {{route('comic.show', $comic->id)}} " class="btn btn-primary">View</a>
                 </td>
+                <td>
+                    <a href="{{route('comic.edit', $comic->id)}}" class="btn btn-success">Edit</a>
+                </td>
             </tr>
             @empty
 
