@@ -61,8 +61,8 @@ class ComicsController extends Controller
             'series.required' => 'inserisci una Serie',
             'series.min' => 'la Serie deve essere di almeno 2 caratteri',
             'series.max' => 'la Serie deve essere di massimo 255 caratteri',
-            'sale_date.required' => 'inserisci una Data di uscità',
-            'sale_date.date' => 'la Data di uscità deve essere una data',
+            'sale_date.required' => 'inserisci una Data di uscita',
+            'sale_date.date' => 'la Data di uscita deve essere una data',
             'type.required' => 'Inserisci un Tipo di fumetto',
             'type.min' => 'il Tipo di fumetto deve essere di almeno 2 caratteri',
             'type.max' => 'il Tipo di fumetto deve essere di massimo 255 caratteri'   
